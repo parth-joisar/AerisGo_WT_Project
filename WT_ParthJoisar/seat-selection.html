@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>AerisGo | Seat Selection</title>
+<link rel="stylesheet" href="styles.css">
+<script src="passenger.js" defer></script>
+</head>
+<body><div class="internal">
+<header class="page-header"><a class="back" href="flight-details.html">←</a><div class="title">Seat Selection</div><a class="nav-btn session-exit" href="index.html" data-session-logout>↪ &nbsp;Sign out</a></header>
+<main class="content"><div class="flow-head"><div><h1>Select Seats</h1><p>Ahmedabad → Mumbai · Economy</p></div><div class="route-pill">AG109</div></div>
+<div class="progress"><span class="on"></span><span></span><span></span><span></span></div>
+<form action="passenger-details.html" data-flow="seat"><section class="info-card"><h3>Choose your seat</h3>
+<div class="seats">
+<div class="seat"><input id="1a" name="seat" type="radio"><label for="1a">1A</label></div><div class="seat"><input id="1b" name="seat" type="radio"><label for="1b">1B</label></div><div class="aisle"></div><div class="seat"><input id="1c" name="seat" type="radio"><label for="1c">1C</label></div><div class="seat"><input id="1d" name="seat" type="radio"><label for="1d">1D</label></div>
+<div class="seat booked"><input id="2a" disabled><label for="2a">2A</label></div><div class="seat booked"><input id="2b" disabled><label for="2b">2B</label></div><div class="aisle"></div><div class="seat"><input id="2c" name="seat" type="radio" checked><label for="2c">2C</label></div><div class="seat"><input id="2d" name="seat" type="radio"><label for="2d">2D</label></div>
+<div class="seat"><input id="3a" name="seat" type="radio"><label for="3a">3A</label></div><div class="seat"><input id="3b" name="seat" type="radio"><label for="3b">3B</label></div><div class="aisle"></div><div class="seat"><input id="3c" name="seat" type="radio"><label for="3c">3C</label></div><div class="seat"><input id="3d" name="seat" type="radio"><label for="3d">3D</label></div>
+<div class="seat"><input id="4a" name="seat" type="radio"><label for="4a">4A</label></div><div class="seat"><input id="4b" name="seat" type="radio"><label for="4b">4B</label></div><div class="aisle"></div><div class="seat"><input id="4c" name="seat" type="radio"><label for="4c">4C</label></div><div class="seat"><input id="4d" name="seat" type="radio"><label for="4d">4D</label></div>
+</div><div class="seat-legend"><span>Available</span><span class="selected">Selected</span><span class="booked">Booked</span></div></section>
+<section class="info-card"><div class="row"><span>Selected Seat</span><b>2C</b></div><br><div class="row"><span>Seat Price</span><b>₹ 1,098</b></div><br><div class="row" style="font-size:15px"><b>Total</b><b>₹ 4,598</b></div></section>
+<button class="primary-action" type="submit">Continue</button></form></main></div></body>
+</html>

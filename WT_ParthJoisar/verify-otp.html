@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>AerisGo | Verify OTP</title>
+<link rel="stylesheet" href="styles.css">
+<script src="passenger.js" defer></script>
+</head>
+<body><div class="internal">
+<header class="page-header"><a class="back" href="signup.html">←</a><div class="title">Verify OTP</div><div style="width:95px"></div></header>
+<main class="content center"><form id="otpForm" class="info-card" action="home-account.html" data-flow="otp"><div class="success" style="padding:10px 15px 20px"><h1>Verify OTP</h1><p>Enter the 6-digit code to complete demo sign-up.</p><p class="demo-otp">Demo verification code: <strong>123456</strong></p></div><div class="otp-fields" style="display:flex;gap:8px;justify-content:center;margin:15px 0 10px"><input class="flow-input otp-digit" name="digit1" inputmode="numeric" pattern="[0-9]" maxlength="1" required style="width:42px;text-align:center;font-size:18px" aria-label="OTP digit 1"><input class="flow-input otp-digit" name="digit2" inputmode="numeric" pattern="[0-9]" maxlength="1" required style="width:42px;text-align:center;font-size:18px" aria-label="OTP digit 2"><input class="flow-input otp-digit" name="digit3" inputmode="numeric" pattern="[0-9]" maxlength="1" required style="width:42px;text-align:center;font-size:18px" aria-label="OTP digit 3"><input class="flow-input otp-digit" name="digit4" inputmode="numeric" pattern="[0-9]" maxlength="1" required style="width:42px;text-align:center;font-size:18px" aria-label="OTP digit 4"><input class="flow-input otp-digit" name="digit5" inputmode="numeric" pattern="[0-9]" maxlength="1" required style="width:42px;text-align:center;font-size:18px" aria-label="OTP digit 5"><input class="flow-input otp-digit" name="digit6" inputmode="numeric" pattern="[0-9]" maxlength="1" required style="width:42px;text-align:center;font-size:18px" aria-label="OTP digit 6"></div><p id="otpMessage" class="form-message" role="alert"></p><button class="primary-action" type="submit">Verify OTP</button></form></main></div></body>
+</html>

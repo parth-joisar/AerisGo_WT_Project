@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>AerisGo | Baggage Selection</title>
+<link rel="stylesheet" href="styles.css">
+<script src="passenger.js" defer></script>
+</head>
+<body><div class="internal">
+<header class="page-header"><a class="back" href="meal-selection.html">←</a><div class="title">Baggage Selection</div><a class="nav-btn session-exit" href="index.html" data-session-logout>↪ &nbsp;Sign out</a></header>
+<main class="content"><div class="flow-head"><div><h1>Baggage Selection</h1><p>Add baggage for your upcoming flight</p></div></div>
+<form action="account.html" data-flow="baggage"><section class="info-card"><h3>Baggage Allowance</h3><div class="form-grid"><div><label class="flow-label" for="includedPieces">Included Pieces</label><input id="includedPieces" class="flow-input" value="1" readonly></div><div><label class="flow-label" for="includedWeight">Included Weight</label><input id="includedWeight" class="flow-input" value="15 kg" readonly></div><div><label class="flow-label" for="extraBaggage">Additional Baggage</label><select id="extraBaggage" name="extraBaggage" class="flow-input" required><option value="0">None</option><option value="5">+5 kg — ₹750</option><option value="10">+10 kg — ₹1,300</option></select></div></div></section>
+<section class="info-card"><h3>Important Notes</h3><p class="muted" style="font-size:11px;line-height:1.7">• All baggage is subject to security screening<br>• Keep valuable items in your cabin baggage<br>• Oversized baggage may incur additional charges</p></section>
+<button class="primary-action" type="submit">Finish</button></form></main></div></body>
+</html>

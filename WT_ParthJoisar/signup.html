@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>AerisGo | Sign Up</title>
+<link rel="stylesheet" href="styles.css">
+<script src="passenger.js" defer></script>
+</head>
+<body>
+<div class="auth">
+<section class="auth-left">
+<a class="brand" href="index.html"><img src="assets/welcome-logo-2.png" alt="AerisGo"></a>
+<div class="auth-center">
+<form class="auth-form" id="signupForm" action="verify-otp.html" method="get" novalidate>
+<h1>Create a account</h1>
+<p class="lead">Enter your details to get started</p>
+<div class="form-group">
+<label for="name">Full Name</label>
+<input id="name" name="name" class="auth-input" autocomplete="name" placeholder="e.g., John Doe" minlength="2" maxlength="60" pattern="[A-Za-z][A-Za-z .'-]{1,59}" title="Enter a name using letters, spaces, apostrophes, or hyphens." required>
+</div>
+<div class="form-group">
+<label for="email">Email</label>
+<input id="email" name="email" class="auth-input" type="email" autocomplete="email" placeholder="m@example.com" maxlength="254" required>
+</div>
+<div class="form-group">
+<label for="phone">Phone</label>
+<div class="phone">
+<span class="prefix">+91</span>
+<input id="phone" name="phone" class="auth-input" type="tel" inputmode="numeric" autocomplete="tel-national" placeholder="10-digit number" pattern="[0-9]{10}" minlength="10" maxlength="10" title="Enter exactly 10 digits." data-digits-only required>
+</div>
+</div>
+<div class="form-group">
+<label>Gender</label>
+<div class="gender">
+<input id="male" name="gender" type="radio" value="Male" required><label for="male">Male</label>
+<input id="female" name="gender" type="radio" value="Female"><label for="female">Female</label>
+<input id="other" name="gender" type="radio" value="Other"><label for="other">Other</label>
+</div>
+</div>
+<div class="form-group">
+<label for="password">Password</label>
+<input id="password" name="password" class="auth-input" type="password" autocomplete="new-password" placeholder="At least 8 characters" minlength="8" maxlength="72" pattern="(?=.*[A-Za-z])(?=.*[0-9]).{8,72}" title="Use at least 8 characters, including a letter and a number." required>
+</div>
+<div class="form-group">
+<label for="confirm">Confirm Password</label>
+<input id="confirm" name="confirm" class="auth-input" type="password" autocomplete="new-password" placeholder="Re-enter your password" minlength="8" maxlength="72" required>
+</div>
+<button class="submit" type="submit">Create Account</button>
+<p class="form-message" id="signupMessage" role="alert" aria-live="polite"></p>
+<p class="switch">Already have an account ? <a href="signin.html">Sign in</a></p>
+</form>
+</div>
+</section>
+<aside class="auth-right">
+<img src="assets/auth-bg.png" alt="Airplane">
+<div class="auth-caption">
+<h2>Join thousands of travelers</h2>
+<p>Start your journey with us and explore the world</p>
+</div>
+</aside>
+</div>
+</body>
+</html>

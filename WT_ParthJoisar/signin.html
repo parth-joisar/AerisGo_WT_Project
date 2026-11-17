@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>AerisGo | Sign In</title>
+<link rel="stylesheet" href="styles.css">
+<script src="passenger.js" defer></script>
+<script src="signin.js" defer></script>
+</head>
+<body>
+<div class="auth">
+<section class="auth-left">
+<a class="brand" href="index.html"><img src="assets/welcome-logo-2.png" alt="AerisGo"></a>
+<div class="auth-center">
+<form class="auth-form" id="signinForm" action="home-account.html" method="get" novalidate>
+<h1>Welcome back</h1>
+<p class="lead">Sign in to your account to continue</p>
+<div class="form-group">
+<label for="email">Email</label>
+<input id="email" name="email" class="auth-input" type="email" autocomplete="username" placeholder="m@example.com" maxlength="254" required>
+</div>
+<div class="form-group">
+<label for="password">Password</label>
+<div class="pass">
+<input id="password" name="password" class="auth-input" type="password" autocomplete="current-password" placeholder="••••••••" minlength="8" maxlength="72" required>
+<span class="eye">◉</span>
+</div>
+</div>
+<div class="forgot"><a href="forgot-password.html">Forgot Password ?</a></div>
+<button class="submit" type="submit">Sign in</button>
+<p class="form-message" id="signinMessage" role="alert" aria-live="polite"></p>
+<section class="passenger-demo" aria-label="Passenger demo account">
+  <div><strong>Just exploring?</strong><span>Fill the demo passenger sign-in details instantly.</span></div>
+  <button id="demoPassengerButton" type="button">Use demo passenger account <b aria-hidden="true">↗</b></button>
+  <p id="demoPassengerStatus" role="status" aria-live="polite"></p>
+</section>
+<div class="staff-access"><span>Are you an AerisGo team member?</span><a href="admin.html">Admin &amp; Staff Portal <b aria-hidden="true">↗</b></a></div>
+<p class="switch">Don’t have an account ? <a href="signup.html">Sign up</a></p>
+</form>
+</div>
+</section>
+<aside class="auth-right">
+<img src="assets/auth-bg.png" alt="Airplane">
+<div class="auth-caption">
+<h2>Book your next adventure</h2>
+<p>Discover amazing destinations and create unforgettable memories</p>
+</div>
+</aside>
+</div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>AerisGo | Check-in</title>
+<link rel="stylesheet" href="styles.css">
+<script src="passenger.js" defer></script>
+</head>
+<body><div class="internal">
+<header class="page-header"><a class="back" href="account.html">←</a><div class="title">Web Check-in</div><a class="nav-btn session-exit" href="index.html" data-session-logout>↪ &nbsp;Sign out</a></header>
+<main class="content"><div class="flow-head"><div><h1>Check-in</h1><p>Ahmedabad → Mumbai · AG109</p></div><div class="route-pill">Seat 9B</div></div>
+<section class="info-card"><h3>Passenger & Flight</h3><div class="rows"><div class="row"><span>Passenger</span><b data-session-name>Demo Passenger</b></div><div class="row"><span>Flight</span><b>AG109</b></div><div class="row"><span>Departure</span><b>21:30</b></div><div class="row"><span>Arrival</span><b>22:36</b></div><div class="row"><span>Seat</span><b>9B</b></div></div><div class="alert">Check-in is now open! Complete check-in to get your boarding pass.</div></section>
+<form action="checkin-success.html" data-flow="checkin"><label class="check"><input type="checkbox" name="checkinConfirmed" required> I confirm the passenger and flight details are correct.</label><button class="primary-action" type="submit">Complete Check-in</button></form></main></div></body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>AerisGo | Flight Booking</title>
+<link rel="stylesheet" href="styles.css">
+<script src="passenger.js" defer></script>
+</head>
+<body><div class="site">
+<header class="topbar">
+<a class="brand" href="index.html"><img src="assets/welcome-logo-2.png" alt="AerisGo"></a>
+<nav class="nav"><a class="nav-btn" href="signin.html">↪ &nbsp;Sign in</a><a class="nav-btn primary" href="signup.html">♟ &nbsp;Sign up</a></nav>
+</header>
+<main>
+<section class="home-hero">
+<div class="trust">↗ &nbsp;Trusted by 10,000+ travelers</div>
+<h1>Your Journey<br><span class="gradient">Begins Here</span></h1>
+<p>Discover amazing destinations and book flights with ease. Your next<br> adventure is just a few clicks away.</p>
+
+<form class="search-box" action="search-results.html" method="get" data-flow="search">
+<div class="tabs"><button class="tab active" type="button">One Way</button><button class="tab" type="button">Round Trip</button></div>
+<div class="search-grid">
+<div class="field"><label for="searchFrom">⌖ From</label><select class="select" id="searchFrom" name="from" required><option value="">Select Departure city</option><option value="Ahmedabad">Ahmedabad</option><option value="Mumbai">Mumbai</option><option value="Delhi">Delhi</option><option value="Bangalore">Bangalore</option></select></div>
+<div class="field"><label for="searchTo">⌖ To</label><select class="select" id="searchTo" name="to" required><option value="">Select Arrival city</option><option value="Mumbai">Mumbai</option><option value="Ahmedabad">Ahmedabad</option><option value="Delhi">Delhi</option><option value="Bangalore">Bangalore</option></select></div>
+<div class="field"><label for="searchDate">▣ Date</label><input class="input" id="searchDate" type="date" name="date" required></div>
+<div class="field"><label>♙ Passengers</label><select class="select" name="passengers"><option value="1">1 Adult, 0 Children</option><option value="2">2 Adults, 0 Children</option><option value="3">3 Adults, 0 Children</option></select></div>
+</div><button class="search-submit">Search Flights &nbsp;→</button>
+</form>
+</section>
+<section class="section"><div class="container">
+<div class="section-head"><h2>Why Choose AerisGo ?</h2><p>Experience the best in flight booking</p></div>
+<div class="features">
+<article class="feature"><div class="feature-icon">♡</div><h3>Secure Booking</h3><p>Your data is protected with industry-standard encryption</p></article>
+<article class="feature"><div class="feature-icon">◷</div><h3>24/7 Support</h3><p>Our team is always here to help you with your journey</p></article>
+<article class="feature"><div class="feature-icon">▤</div><h3>Best Prices</h3><p>Get the most competitive fares for your flights</p></article>
+<article class="feature"><div class="feature-icon">★</div><h3>Rewards Program</h3><p>Earn points on every booking and redeem for discounts</p></article>
+</div>
+</div></section>
+<section class="section"><div class="container"><div class="section-head"><h2>Popular Destinations</h2><p>Explore the most traveled routes</p></div>
+<div class="destinations">
+<a class="destination" href="search-results.html?from=Mumbai&to=Delhi&passengers=1"><img src="assets/destinations/mumbai.jpg" alt="Mumbai"><div class="text"><h3>Mumbai</h3><p>India</p></div></a>
+<a class="destination" href="search-results.html?from=Delhi&to=Mumbai&passengers=1"><img src="assets/destinations/delhi.jpg" alt="Delhi"><div class="text"><h3>Delhi</h3><p>India</p></div></a>
+<a class="destination" href="search-results.html?from=Bangalore&to=Mumbai&passengers=1"><img src="assets/destinations/bangalore.jpg" alt="Bangalore"><div class="text"><h3>Bangalore</h3><p>India</p></div></a>
+<a class="destination" href="search-results.html?from=Ahmedabad&to=Mumbai&passengers=1"><img src="assets/destinations/ahmedabad.jpg" alt="Ahmedabad"><div class="text"><h3>Ahmedabad</h3><p>India</p></div></a>
+</div></div></section>
+<section class="cta"><h2>Ready To Start Our Journey?</h2><p>Join thousands of travelers who trust AerisGo for their flight bookings</p><a class="cta-btn" href="signup.html">Get Started &nbsp;→</a></section>
+<footer class="footer"><img src="assets/welcome-logo-2.png" alt="AerisGo"><p>© 2025 AerisGo. All rights reserved.</p></footer>
+</main></div></body>
+</html>

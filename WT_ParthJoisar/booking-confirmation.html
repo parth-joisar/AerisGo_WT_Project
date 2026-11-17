@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>AerisGo | Booking Confirmation</title>
+<link rel="stylesheet" href="styles.css">
+<script src="passenger.js" defer></script>
+</head>
+<body><div class="internal">
+<header class="page-header"><a class="back" href="passenger-details.html">←</a><div class="title">Booking Confirmation</div><a class="nav-btn session-exit" href="index.html" data-session-logout>↪ &nbsp;Sign out</a></header>
+<main class="content"><div class="flow-head"><div><h1>Review & Confirm</h1><p>Check your booking details before confirming</p></div></div>
+<div class="progress"><span class="on"></span><span class="on"></span><span class="on"></span><span></span></div>
+<section class="booking-ticket"><div class="booking-route"><div><small>Ahmedabad</small><strong>21:30</strong></div><div>✈<small>1h 6m</small></div><div><small>Mumbai</small><strong>22:36</strong></div></div><div class="booking-price"><b>AerisGo</b><b>₹ 4,598</b></div></section>
+<section class="info-card"><h3>Booking Summary</h3><div class="rows"><div class="row"><span>Passenger</span><b data-session-name>Demo Passenger</b></div><div class="row"><span>Flight</span><b>AG109</b></div><div class="row"><span>Seat</span><b>2C</b></div><div class="row"><span>Base Fare</span><b>₹ 3,500</b></div><div class="row"><span>Seat & Taxes</span><b>₹ 1,098</b></div><div class="row" style="font-size:15px"><b>Total Amount</b><b>₹ 4,598</b></div></div></section>
+<form action="booking-success.html" data-flow="confirm"><label class="check"><input type="checkbox" name="terms" value="accepted" required> I agree to the booking terms and conditions.</label>
+<button class="primary-action" type="submit">Confirm Booking</button></form></main></div></body>
+</html>

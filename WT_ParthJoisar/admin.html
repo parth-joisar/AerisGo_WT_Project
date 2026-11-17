@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#641f2f">
+  <title>AerisGo Admin | Operations</title>
+  <link rel="stylesheet" href="admin.css">
+  <script src="admin.js" defer></script>
+</head>
+<body>
+  <main class="login-screen" id="loginScreen">
+    <section class="login-panel">
+      <a class="login-brand" href="index.html"><img src="assets/welcome-logo-2.png" alt="AerisGo"></a>
+      <div class="login-card">
+        <span class="eyebrow">STAFF &amp; ADMIN ACCESS</span>
+        <h1>Welcome back</h1>
+        <p>Sign in to manage AerisGo operations.</p>
+        <form id="loginForm">
+          <label for="loginEmail">Email address</label>
+          <input id="loginEmail" name="email" type="email" autocomplete="username" placeholder="admin@aerisgo.in" required>
+          <label for="loginPassword">Password</label>
+          <input id="loginPassword" name="password" type="password" autocomplete="current-password" placeholder="Enter your password" required>
+          <p class="login-error" id="loginError" role="alert"></p>
+          <p class="login-status" id="loginStatus" role="status" aria-live="polite"></p>
+          <button class="button primary login-submit" type="submit">Sign in to dashboard <span>→</span></button>
+        </form>
+        <button class="demo-access" id="demoLoginButton" type="button"><span><strong>Demo account</strong><small>Fill the email and password automatically</small></span><b>Use demo account <span aria-hidden="true">↗</span></b></button>
+        <p class="login-note">Demo sign-in only. Connect a secure authentication service before using this dashboard with real accounts.</p>
+      </div>
+      <span class="login-footer">© 2026 AerisGo · Operations portal</span>
+    </section>
+    <section class="login-visual"><img src="assets/welcome-logo-2.png" alt="AerisGo"><div><span>BUILT FOR BETTER JOURNEYS</span><h2>Your operations,<br>all in one place.</h2><p>Manage flights, passengers and your fleet with clarity.</p></div></section>
+  </main>
+  <div class="app-shell" id="appShell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="admin.html" aria-label="AerisGo Admin home"><span class="brand-mark">A</span><span>erisGo</span><small>OPERATIONS</small></a>
+      <div class="nav-label">WORKSPACE</div>
+      <nav class="main-nav" aria-label="Admin sections">
+        <button class="nav-item active" data-view="dashboard"><span>▦</span>Dashboard</button>
+        <button class="nav-item" data-view="flights"><span>✈</span>Flights</button>
+        <button class="nav-item" data-view="bookings"><span>▤</span>Bookings</button>
+        <button class="nav-item" data-view="aircraft"><span>◈</span>Aircraft</button>
+        <button class="nav-item" data-view="crew"><span>♙</span>Crew</button>
+        <button class="nav-item" data-view="users"><span>♧</span>Users</button>
+        <button class="nav-item" data-view="seatmap"><span>▦</span>Seat map</button>
+      </nav>
+      <div class="sidebar-bottom"><div class="avatar">AA</div><div class="profile"><strong>AerisGo Admin</strong><span>Administrator</span></div><button class="icon-button" data-action="logout" title="Sign out" aria-label="Sign out">↪</button></div>
+    </aside>
+    <main class="main-area">
+      <header class="topbar"><button class="mobile-menu icon-button" id="menuToggle" aria-label="Open navigation">☰</button><div class="crumb"><span class="crumb-icon">▦</span><span id="breadcrumb">Dashboard</span></div><div class="top-actions"><span class="live-dot">● <span>Operations live</span></span><button class="icon-button notification" aria-label="Notifications">♧<i></i></button><div class="top-avatar">PJ</div></div></header>
+      <div class="content" id="content"></div>
+    </main>
+  </div>
+  <dialog id="recordDialog" class="record-dialog"><form id="recordForm"><div class="dialog-head"><div><span class="eyebrow">OPERATIONS</span><h2 id="dialogTitle">Add record</h2></div><button type="button" class="icon-button close-dialog" id="closeRecord" data-close-dialog aria-label="Close">×</button></div><div id="dialogFields" class="dialog-fields"></div><div class="dialog-actions"><button type="button" class="button quiet" id="cancelRecord" data-close-dialog>Cancel</button><button type="submit" class="button primary" id="saveRecord">Save record</button></div></form></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
